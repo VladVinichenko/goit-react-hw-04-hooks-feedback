@@ -9,7 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <Fragment>
       <div className={s.buttonBox}>
         {keys.map(key =>
-          <Button type='button' name={key} onLeaveFeedback={onLeaveFeedback} key={key} />
+          <button className={s.button} onClick={() => onLeaveFeedback(key)} key={key}>{key}</button >
         )}
       </div>
     </Fragment>

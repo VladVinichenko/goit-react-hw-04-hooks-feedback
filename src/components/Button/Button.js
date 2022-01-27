@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 const Button = ({ name, onLeaveFeedback }) => {
   return (
-    <button className={s.button} name={name} onClick={() => onLeaveFeedback(name)}> {name}</button >
+    <button className={s.button} name={name} onClick={() => onLeaveFeedback()}> {name}</button >
   )
 }
 

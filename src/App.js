@@ -12,10 +12,10 @@ function App() {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
-  const incrementFeedback = evt => {
-    evt === 'good' && setGood(good + 1)
-    evt === 'neutral' && setNeutral(neutral + 1)
-    evt === 'bad' && setBad(bad + 1)
+  const incrementFeedback = typeFeedback => {
+    typeFeedback === 'good' && setGood(good + 1)
+    typeFeedback === 'neutral' && setNeutral(neutral + 1)
+    typeFeedback === 'bad' && setBad(bad + 1)
   }
 
   const countTotalFeedback = () => {
