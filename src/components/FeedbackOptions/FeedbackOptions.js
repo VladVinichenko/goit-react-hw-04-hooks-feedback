@@ -1,6 +1,5 @@
 import { Fragment } from "react/cjs/react.production.min"
 import s from './FeedbackOptions.module.css'
-import Button from "../Button/Button";
 import PropTypes from "prop-types"
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
